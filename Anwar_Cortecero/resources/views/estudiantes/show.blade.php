@@ -10,7 +10,7 @@
         <div class="card-body">
             <h5 class="card-title">{{ $estudiante->nombre }}</h5>
             <p class="card-text">{{ $estudiante->descripcion }}</p>
-            <p class="card-text">Curso: {{ $estudiante->curso>nombre }}</p>
+           
             @if ($estudiante->imagen)
             <img src="{{ Storage::url($estudiante->imagen) }}" class="img-fluid" alt="Imagen del estudiante">
             @else
